@@ -1,0 +1,27 @@
+body{
+    background-color: #212529;
+}
+ /* Carousel component size*/
+.carousel {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1%;
+}
+/* */
+@media (max-width: 900px) {
+    .carousel {
+      width:auto;
+      height:auto;
+    }
+
+    .homepage img{
+        width: auto;
+        height: 500px;
+    }
+}
+
+.homepage img{
+    width: auto;
+    height: 800px;
+}

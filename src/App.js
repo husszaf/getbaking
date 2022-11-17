@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./navbar";
+import Carousel from "./carousel";
+import Card from "./card";
+import "./style.css";
 const App = () => {
   
 
   return (
-    <Navbar />
+    <div class="homepage">
+      <Navbar />
+      <Carousel />
+      <Card />
+    </div>
   );
 }
 
