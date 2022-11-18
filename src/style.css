@@ -1,14 +1,17 @@
+/* Background color of the website*/
 body{
     background-color: #212529;
 }
- /* Carousel component size*/
-.carousel {
-    width: auto;
-    height: auto;
-    margin: auto;
-    margin-bottom: 1%;
+
+/* All the text that is not from Bootstrap but got added */
+
+.main-text{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
 }
-/* */
+
+/* Media queries */
 @media (max-width: 900px) {
     .carousel {
       width:auto;
@@ -23,5 +26,5 @@ body{
 
 .homepage img{
     width: auto;
-    height: 800px;
+    height: 600px;
 }

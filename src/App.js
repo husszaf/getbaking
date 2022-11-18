@@ -4,6 +4,8 @@ import Navbar from "./navbar";
 import Carousel from "./carousel";
 import Card from "./card";
 import "./style.css";
+import "./carousel.css";
+import "./card.css";
 const App = () => {
   
 
@@ -11,7 +13,7 @@ const App = () => {
     <div class="homepage">
       <Navbar />
       <Carousel />
-      <Card />
+      <Card /> 
     </div>
   );
 }

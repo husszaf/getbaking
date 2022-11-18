@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-function UncontrolledExample() {
+function AutoSlideCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
@@ -44,4 +44,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default AutoSlideCarousel;
