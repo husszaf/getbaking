@@ -1,6 +1,6 @@
 /* Background color of the website*/
 body{
-    background-color: #ff80c4;
+    background-color:  #ffff80;
 }
 
 .navbar{
@@ -11,7 +11,7 @@ body{
 
 .main-text{
     text-align: center;
-    color: white;
+    color: black;
     font-size: 2rem;
 }
 

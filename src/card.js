@@ -18,7 +18,7 @@ function RecipeCard() {
           <Card.Link href="#">Another Link</Card.Link>
         </Card.Body>
       </Card>
-
+      {/* Card 2*/}
       <Card style={{ width: '18rem', display: 'inline-block'}}>
         <Card.Body>
           <Card.Title>Vintage chocolate chip cookies</Card.Title>
@@ -31,27 +31,27 @@ function RecipeCard() {
           <Card.Link href="#">Another Link</Card.Link>
         </Card.Body>
       </Card>
-
+      {/* Card 3*/}
       <Card style={{ width: '18rem', display: 'inline-block'}}>
         <Card.Body>
           <Card.Title>Bakewell tart</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Who doesn’t love a bakewell tart packed with raspberries and almonds?
+          Serve the classic English dessert with a dollop of cream or warm custard
           </Card.Text>
           <Card.Link href="#">Card Link</Card.Link>
           <Card.Link href="#">Another Link</Card.Link>
         </Card.Body>
       </Card>
-
+      {/* Card 4*/}
       <Card style={{ width: '18rem', display: 'inline-block'}}>
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+          <Card.Title>Belgian buns</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">Difficulty: Easy</Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Indulge in these moreish Belgian buns as an afternoon treat with a cup of tea.
+          They're filled with lemon curd and topped with icing and a glacé cherry.
           </Card.Text>
           <Card.Link href="#">Card Link</Card.Link>
           <Card.Link href="#">Another Link</Card.Link>

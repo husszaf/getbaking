@@ -1,9 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+//import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function BasicExample() {
+function theNavbar() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
@@ -12,7 +12,7 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Recent Recipes</Nav.Link>
+            <Nav.Link href="recipes.js">Recent Recipes</Nav.Link>
             <Nav.Link href="#link">Seasonal Recipes</Nav.Link>
             <Nav.Link href="#link">Bake</Nav.Link>
             
@@ -34,4 +34,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default theNavbar;
