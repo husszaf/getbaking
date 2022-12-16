@@ -8,4 +8,5 @@
 
 .carousel-inner img {
     object-fit: cover;
+    max-height: 40rem !important;
 }
