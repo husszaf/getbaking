@@ -1,18 +1,1 @@
-.cont{
-    height: 45rem;
-    background-color: #000000;
-    min-width: 100% !important;
-    padding: 0%;
-}
 
-.cont img{
-    width: 100%;
-    height: 100%;
-    opacity: 45%
-}
-
-figcaption{
-    position: absolute;
-    bottom: 2rem;
-    margin: 0 2rem;
-}

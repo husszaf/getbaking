@@ -9,7 +9,7 @@ function theNavbar() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/Home" className='border-left pl-2'>Get Baking!</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className='border-left pl-2'>Get Baking!</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-center" style={{ flex: 1}}>
