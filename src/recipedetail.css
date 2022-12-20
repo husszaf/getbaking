@@ -1,0 +1,50 @@
+.container-2{
+    margin: 2%;
+}
+.img-fluid{
+    max-width: 20% !important;
+}
+
+.img-thumbnail{
+    max-width: 80%;
+}
+
+.recipeName{
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+}
+
+.recipeAuthor{
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.recipeDescription{
+    justify-content: center;
+}
+
+.profileImg{
+    max-width: 50px;
+}
+
+.profileCol{
+    display: contents;
+}
+
+.profileRow{
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    padding-bottom: 1%;
+}
+
+.rounded-circle{
+    width: 50px;
+    height: 50px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color:  #ffff80 !important;
+    color: black;
+}
+
+.list-group{
+    --bs-list-group-bg: #ffff80 !important;
+}

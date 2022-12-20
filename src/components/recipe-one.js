@@ -1,3 +1,4 @@
+import React from 'react';
 import Data from "../recipes.json";
 import Accordion from "react-bootstrap/Accordion";
 

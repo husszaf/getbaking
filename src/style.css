@@ -1,10 +1,16 @@
 /* Background color of the website*/
 body{
-    background-color:  #ffff80;
+    /*background-color:  #ffff80;*/
+    background-color: #ff80c4;
 }
 
 .navbar{
-    background-color:  #ff80c4 !important;
+    /*background-color:  #ff80c4 !important;*/
+    background-color:  #ffff80 !important;
+}
+
+.navbar a{
+    color: black;
 }
 
 /* All the text that is not from Bootstrap but got added */
