@@ -27,6 +27,8 @@ function RelatedRecipes() {
                   />
                   <Card.Body>
                     <Card.Title>{relatedRecipe.name}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">{"Diffculty: " + recipe.difficulty}</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted">{"Prep Time: " + recipe['cook-time'].slice(2)}</Card.Subtitle>
                     <Card.Text>{relatedRecipe.description}</Card.Text>
                     <Link to={`/pages/RecipeDetails/${relatedRecipe.uuid}`}>
                       <Button variant="primary">View recipe</Button>
