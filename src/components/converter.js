@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Container, Form } from 'react-bootstrap';
 const RecipeMeasurementConverter = () => {
   // Declare state variables to store the input and output values
   const [inputValue, setInputValue] = useState('');
@@ -70,7 +70,15 @@ const RecipeMeasurementConverter = () => {
   };
 
   return (
-    <div>
+    <Container>
+      <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail" type="number" value={inputValue} onChange={handleInputValueChange}>
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted">
+          We'll never share your email with anyone else.
+        </Form.Text>
+      </Form.Group>
       <input type="number" value={inputValue} onChange={handleInputValueChange} />
       <select value={inputUnit} onChange={handleInputUnitChange}>
         <option value="tablespoons">Tablespoons</option>
@@ -88,7 +96,8 @@ const RecipeMeasurementConverter = () => {
         <option value="g">Grams</option>
         <option value="kg">Kilograms</option>
       </select>
-    </div>
+      </Form>
+    </Container>
   );
 };
 

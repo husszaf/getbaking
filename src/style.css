@@ -13,6 +13,10 @@ body{
     color: black;
 }
 
+.navbar a:hover{
+    color: #ff80c4;
+}
+
 /* All the text that is not from Bootstrap but got added */
 
 .main-text{

@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function theNavbar() {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/" className='border-left pl-2'>Get Baking!</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,7 +15,7 @@ function theNavbar() {
           <Nav className="justify-content-center" style={{ flex: 1}}>
             <Nav.Link as={Link} to="/recipes">Popular</Nav.Link>
             <Nav.Link href="#link">Seasonal Recipes</Nav.Link>
-            <Nav.Link href="/Bake">Bake</Nav.Link>
+            <Nav.Link as={Link} to="/bake">Bake</Nav.Link>
             <Nav.Link href="/recipes.js">Recent Recipes</Nav.Link>
             <Nav.Link href="#link">About Us</Nav.Link>
             

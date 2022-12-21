@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { Accordion, Col, Container, ListGroup, Row } from "react-bootstrap";
 import Data from "../recipes.json"; // Import the recipes data from the JSON file
 import "../recipedetail.css";
-import RecipeMeasurementConverter from "../components/converter";
+import RecipeBuilder from '../components/RecipeBuilder';
+import RelatedRecipe from '../components/RelatedRecipe';
 
 function RecipeDetails() {
   const { recipeId } = useParams(); // Retrieve the recipe object from the list of recipes using the recipeId
@@ -21,7 +22,6 @@ function RecipeDetails() {
           <h6 className="recipeAuthor">{recipe.author}</h6>
           </Col>
           <Col>
-            
           </Col>
         </Row>
       </Container>
@@ -78,20 +78,7 @@ function RecipeDetails() {
       </Container>
 
       {/* Related recipes */}
-      <section className="related-recipes">
-        <h3>Related Recipes:</h3>
-        {Data.filter((r) => r.name[0] === recipe.name[0]).map(
-          (relatedRecipe) => {
-            return (
-              <div className="related-recipe">
-                <h4>{relatedRecipe.name}</h4>
-                <p>{relatedRecipe.description}</p>
-              </div>
-            );
-          }
-        )}
-      </section>
-      <RecipeMeasurementConverter/>
+      <RelatedRecipe />
     </Container>
   );
 }
