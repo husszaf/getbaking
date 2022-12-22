@@ -16,13 +16,14 @@ import Welcome from "./components/welcome";
 import RecipeDetails from "./pages/RecipeDetails";
 import Seasonal from "./pages/Seasonal";
 import Recent from "./pages/Recent";
-import RecipeMeasurementConverter from "./pages/mesaurmentConverter";
-
+import RecipeMeasurementConverter from "./pages/mesaurmentConverter"; 
+import Getbaking from "./getbaking";
 const App = () => {
   return (
     <div class="App">
-      <Navbar />
+     <Navbar />
       <Routes>
+        <Route exact path="/getbaking" element={<Getbaking/>} />
         <Route exact path="/" element={<AutoSlideCarousel/>} />
         <Route exact path="/Popular" element={<Popular />} />
         <Route exact path="/Seasonal" element={<Seasonal />} />
@@ -32,6 +33,7 @@ const App = () => {
         <Route exact path="/mesaurmentConverter" element={<RecipeMeasurementConverter/>} />
         <Route exact path="/pages/RecipeDetails/:recipeId" element={<RecipeDetails/>} />
       </Routes>
+
       <Routes><Route exact path="/" element={<Welcome/>} /></Routes>
       <Routes><Route exact path="/" element={<RecipeCard />} /></Routes>
       <Footer />
