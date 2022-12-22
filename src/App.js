@@ -7,7 +7,6 @@ import AutoSlideCarousel from "./components/carousel";
 import Popular from "./pages/Popular";
 import Bake from "./pages/Bake";
 import "./style.css";
-import "./containersection.css";
 import "./carousel.css";
 import "./card.css";
 import { Routes, Route } from "react-router-dom";
