@@ -82,7 +82,6 @@ function RecipeDetails() {
           <div className="col-sm-auto">
             <h3>Nutrition:</h3>
             <ListGroup>
-              {/* Here you can add the nutrition information for the recipe using the same format as the ingredients ListGroup */}
               <ListGroup.Item className="lead">
                 Serving - {recipe.nutrition[0].serving}
               </ListGroup.Item>
