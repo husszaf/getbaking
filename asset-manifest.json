@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/getbaking/static/css/main.1f95ad49.css",
-    "main.js": "/getbaking/static/js/main.b01eacb9.js",
+    "main.js": "/getbaking/static/js/main.25dbd6a3.js",
     "index.html": "/getbaking/index.html",
     "main.1f95ad49.css.map": "/getbaking/static/css/main.1f95ad49.css.map",
-    "main.b01eacb9.js.map": "/getbaking/static/js/main.b01eacb9.js.map"
+    "main.25dbd6a3.js.map": "/getbaking/static/js/main.25dbd6a3.js.map"
   },
   "entrypoints": [
     "static/css/main.1f95ad49.css",
-    "static/js/main.b01eacb9.js"
+    "static/js/main.25dbd6a3.js"
   ]
 }
