@@ -288,7 +288,7 @@
             }
         ],
         "secondary-instructions": [
-            "2a642266-2434-4209-92f9-1fff1d43642f"
+            ""
         ],
         "nutrition": [
             {
@@ -320,9 +320,7 @@
         "prep-time": "PT5M",
         "yield": "Around 250ml or 1 cup",
         "description": "Make an orange syrup, ideal for pouring over cakes and babkas.",
-        "images": [
-            "https://www.supergoldenbakes.com/wordpress/wp-content/uploads/2020/04/Golden_Syrup_Cake-2.jpg"
-        ],
+        "images": ["https://cosmopolitancornbread.com/wp-content/uploads/2020/02/orange-syrup-8.jpg"],
         "ingredients": [
             {
                 "ingredient": "caster sugar",
@@ -347,12 +345,20 @@
             }
         ],
         "secondary-instructions": [
+            "2a642266-2434-4209-92f9-1fff1d43642f"
         ],
         "nutrition": [
-        ],
-        "categories": [
-                "Side Dish",
-                "Syrup"
+            {
+                "serving": "per serving (2 tbsp)",
+                "kcal": "90",
+                "fat": "0g",
+                "saturates": "0g",
+                "carbs": "0g",
+                "sugars": "24g",
+                "fibre": null,
+                "protein": "0g  ",
+                "salt": null
+            }
         ]
     },
     {

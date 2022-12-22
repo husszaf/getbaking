@@ -18,12 +18,9 @@ function Welcome() {
                 to bake at home.
               </p>
               <Col class="text-center text-md-start">
-                <Link className="btn btn-primary shadow lift me-1" to={`/`}>
+                <Link className="btn btn-primary shadow lift me-1" to={`/Bake`}>
                   View all Recipes{" "}
                   <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-                </Link>
-                <Link className="btn btn-primary-soft lift" to={`/Bake`}>
-                  Create your own recipe
                 </Link>
               </Col>
             </Col>

@@ -10,15 +10,16 @@ function RelatedRecipes() {
   const { recipeId } = useParams();
   const recipe = Data.find((recipe) => recipe.uuid === recipeId);
   return (
-    <>
-      <section className="related-recipes">
+      <div className="container related-recipes">
         <h3>Related Recipes:</h3>
+        <div className="row">
         {Data.filter(
           (r) => r.name[2] === recipe.name[1] || r.name[1] === recipe.name[2]
         ).map((relatedRecipe) => {
           return (
             <>
               <Container className="related-recipe">
+                
                 <Card style={{ width: "18rem" }}>
                   <Card.Img
                     style={{ height: "12rem" }}
@@ -35,12 +36,13 @@ function RelatedRecipes() {
                     </Link>
                   </Card.Body>
                 </Card>
+                
               </Container>
             </>
           );
         })}
-      </section>
-    </>
+        </div>
+      </div>
   );
 }
 
