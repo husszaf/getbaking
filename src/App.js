@@ -22,11 +22,8 @@ const App = () => {
   return (
     <div class="App">
       <Navbar />
-      <AutoSlideCarousel/>
-      <Welcome/>
-      <RecipeCard />
       <Routes>
-        {/*<Route exact path="/" element={<AutoSlideCarousel/>} />*/}
+        <Route exact path="/" element={<AutoSlideCarousel/>} />
         <Route exact path="/Popular" element={<Popular />} />
         <Route exact path="/Seasonal" element={<Seasonal />} />
         <Route exact path="/recipes" element={<Recipes />} />
@@ -35,10 +32,8 @@ const App = () => {
         <Route exact path="/mesaurmentConverter" element={<RecipeMeasurementConverter/>} />
         <Route exact path="/pages/RecipeDetails/:recipeId" element={<RecipeDetails/>} />
       </Routes>
-      {/* 
       <Routes><Route exact path="/" element={<Welcome/>} /></Routes>
       <Routes><Route exact path="/" element={<RecipeCard />} /></Routes>
-      */}
       <Footer />
     </div>
   );
