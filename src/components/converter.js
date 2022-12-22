@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { Container, Form } from 'react-bootstrap';
 import '../converter.css';
 
 const RecipeMeasurementConverter = () => {
-  // Declare state variables to store the input and output values
+  // Declares state variables to store the input and output values
   const [inputValue, setInputValue] = useState('');
   const [inputUnit, setInputUnit] = useState('tablespoons');
   const [outputUnit, setOutputUnit] = useState('ml');
   const [outputValue, setOutputValue] = useState('');
 
-  // Declare a conversion factor object to store the conversion factors for each unit
+  // Declares a conversion factor object to store the conversion factors for each unit
   const conversionFactors = {
     tablespoons: {
       ml: 14.7868,

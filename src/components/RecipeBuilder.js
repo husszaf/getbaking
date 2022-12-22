@@ -135,10 +135,13 @@ function RecipeDetails() {
                   </>
                 ))}
 
-                <Button className="btn-add-ingredient" variant="primary" onClick={handleAddIngredient}>
+                <Button
+                  className="btn-add-ingredient"
+                  variant="primary"
+                  onClick={handleAddIngredient}
+                >
                   Add Ingredient
                 </Button>
-                
               </Form.Group>
               <Form.Group className="mb-3" controlId="formRecipeSteps">
                 <Form.Label>Steps</Form.Label>
@@ -153,7 +156,7 @@ function RecipeDetails() {
                       />
                     </div>
                     <Button
-                    className="btn-remove-step"
+                      className="btn-remove-step"
                       variant="danger"
                       onClick={(event) => handleRemoveStep(event, index)}
                     >
@@ -161,7 +164,11 @@ function RecipeDetails() {
                     </Button>
                   </>
                 ))}
-                <Button className="btn-add-step" variant="primary" onClick={handleAddStep}>
+                <Button
+                  className="btn-add-step"
+                  variant="primary"
+                  onClick={handleAddStep}
+                >
                   Add Step
                 </Button>
               </Form.Group>
@@ -189,7 +196,7 @@ function RecipeDetails() {
 
       {/* Display the recipe details */}
       <Container>
-      <h1 className="recipeName">{name}</h1>
+        <h1 className="recipeName">{name}</h1>
         <Row className="profileRow">
           <Col className="side-by-side profileCol">
             <img

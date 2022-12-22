@@ -1,6 +1,0 @@
-/* Style for an element with the class "editable" when it has focus */
-.editable:focus {
-    background-color: rgb(255, 0, 0);
-    outline: none;
-  }
-  

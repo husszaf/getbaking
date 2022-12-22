@@ -1,9 +1,9 @@
 import { FaTwitter } from 'react-icons/fa';
-import Data from "../recipes.json"; // Import the recipes data from the JSON file
+import Data from "../recipes.json"; // Imports the recipes data from the JSON file
 const TwitterShareLink = () => {
     const recipe = Data.find((recipe) => recipe.uuid);
-    const url = 'https://husszaf.github.io/pages/RecipeDetails/'; // Replace with the URL of the page you want to share
-    const text = 'Learn about this recipe on Get Baking!'; // Replace with the text you want to include in the tweet
+    const url = 'https://husszaf.github.io/pages/RecipeDetails/'; // Replaces with the URL of the recipe page
+    const text = 'Learn about this recipe on Get Baking!'; // Replaces with the tweet text
     const shareLink = `https://twitter.com/intent/tweet?text=${text}&url=${url + recipe.uuid}`;
   
     return (

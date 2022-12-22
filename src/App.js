@@ -5,7 +5,6 @@ import Navbar from "../src/components/navbar";
 import RecipeCard from "./components/card";
 import AutoSlideCarousel from "./components/carousel";
 import Popular from "./pages/Popular";
-import Recipes from "./pages/Recipes";
 import Bake from "./pages/Bake";
 import "./style.css";
 import "./containersection.css";
@@ -31,14 +30,12 @@ const App = () => {
         <Route exact path="/" element={<AutoSlideCarousel/>} />
         <Route exact path="/Popular" element={<Popular />} />
         <Route exact path="/Seasonal" element={<Seasonal />} />
-        <Route exact path="/recipes" element={<Recipes />} />
         <Route exact path="/Bake" element={<Bake />} />
         <Route exact path="/Recent" element={<Recent />} />
         <Route exact path="/CountdownTimer" element={<CountdownTimer/>} />
         <Route exact path="/mesaurmentConverter" element={<RecipeMeasurementConverter/>} />
         <Route exact path="/pages/RecipeDetails/:recipeId" element={<RecipeDetails/>} />
       </Routes>
-
       <Routes><Route exact path="/" element={<Welcome/>} /></Routes>
       <Routes><Route exact path="/" element={<RecipeCard />} /></Routes>
       <Footer />

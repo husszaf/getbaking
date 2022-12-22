@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Table from "react-bootstrap/Table";
 import "../createrecipe.css";
 import Data from "../recipes.json";
 import Card from "react-bootstrap/Card";
