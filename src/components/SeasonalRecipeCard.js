@@ -12,7 +12,7 @@ function SeasonalRecipeCard() {
   return (
     <div className="container recipe">
       <h1 className="main-text display-1">Seasonal Recipes</h1>
-      <div className="d-flex">
+      <div className="row">
         {recipes.slice(3,7).map(recipe => {
           return (
             <>

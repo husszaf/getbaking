@@ -26,7 +26,6 @@ const App = () => {
      <Navbar />
      <ScrollToTop />
       <Routes>
-        
         <Route exact path="/getbaking" element={<Getbaking/>} />
         <Route exact path="/" element={<AutoSlideCarousel/>} />
         <Route exact path="/Popular" element={<Popular />} />

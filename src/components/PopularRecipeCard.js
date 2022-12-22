@@ -12,7 +12,7 @@ function PopularRecipeCard() {
   return (
     <div className="container recipe">
       <h1 className="main-text display-1">‘bake’ by popular demand Recipes</h1>
-      <div className="d-flex">
+      <div className="row">
         {recipes.slice(4).map(recipe => {
           return (
             <>
