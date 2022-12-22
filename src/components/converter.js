@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form } from 'react-bootstrap';
+import '../converter.css';
+
 const RecipeMeasurementConverter = () => {
   // Declare state variables to store the input and output values
   const [inputValue, setInputValue] = useState('');
@@ -70,17 +72,12 @@ const RecipeMeasurementConverter = () => {
   };
 
   return (
-    <Container>
-      <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail" type="number" value={inputValue} onChange={handleInputValueChange}>
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-      <input type="number" value={inputValue} onChange={handleInputValueChange} />
-      <select value={inputUnit} onChange={handleInputUnitChange}>
+    <>
+    <div className="container">
+    <div className="row converter-form">
+      <div className="col-sm converter-col-1">
+      <input className="form-control converter-input" type="number" value={inputValue} onChange={handleInputValueChange} />
+      <select class="form-select" value={inputUnit} onChange={handleInputUnitChange}>
         <option value="tablespoons">Tablespoons</option>
         <option value="teaspoons">Teaspoons</option>
         <option value="grams">Grams</option>
@@ -88,16 +85,23 @@ const RecipeMeasurementConverter = () => {
         <option value="liter">Liters</option>
         <option value="milliliter">Milliliters</option>
       </select>
-      <button onClick={convert}>Convert</button>
-      <input type="number" value={outputValue} readOnly />
-      <select value={outputUnit} onChange={handleOutputUnitChange}>
+      </div>
+      <div className="col-sm">
+      
+      <input className="form-control converter-input converter-col-1" type="number" value={outputValue} readOnly />
+      <select class="form-select" value={outputUnit} onChange={handleOutputUnitChange}>
         <option value="ml">Milliliters</option>
         <option value="l">Liters</option>
         <option value="g">Grams</option>
         <option value="kg">Kilograms</option>
       </select>
-      </Form>
-    </Container>
+      </div>
+      <div className="col converter-col">
+      <button className='btn btn-primary btn-converter' onClick={convert}>Convert</button>
+      </div>
+      </div>
+      </div>
+    </>
   );
 };
 

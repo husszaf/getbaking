@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../PopularRecipeCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Data from '../recipes.json';
 
-function RecipeCard() {
+function PopularRecipeCard() {
   const [recipes, setRecipes] = useState(Data);  // Initialize state with Data
 
   return (
     <div className="container recipe">
-      <h1 className="main-text display-1">Today's Recipes</h1>
-      <div className="row cards">
-        {recipes.slice(0,4).map(recipe => {
+      <h1 className="main-text display-1">‘bake’ by popular demand Recipes</h1>
+      <div className="d-flex">
+        {recipes.slice(4).map(recipe => {
           return (
             <>
               <Card style={{ width: '18rem' }}>
@@ -41,4 +42,4 @@ function RecipeCard() {
   );
 }
 
-export default RecipeCard;
+export default PopularRecipeCard;

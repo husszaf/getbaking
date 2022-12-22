@@ -1,0 +1,16 @@
+.main-text{
+    padding-top: 1% !important;
+}
+
+.card{
+    padding-left: 0px ;
+    padding-right: 0px;
+}
+
+@media (max-width: 767px) {
+    .cards{
+        display: flex !important;
+        justify-content: center !important;
+    }
+  }
+  

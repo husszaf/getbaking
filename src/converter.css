@@ -1,0 +1,20 @@
+.converter-form{
+    margin: 1%;
+}
+
+.converter-input, .form-select{
+    margin-bottom: 2%;
+}
+
+.btn-converter{
+    width: 100%;
+}
+
+.converter-col{
+    justify-content: center;
+    display: flex;
+}
+
+.converter-col-1{
+    
+}

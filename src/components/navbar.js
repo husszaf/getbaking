@@ -13,11 +13,11 @@ function theNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-center" style={{ flex: 1}}>
-            <Nav.Link as={Link} to="/recipes">Popular</Nav.Link>
-            <Nav.Link href="#link">Seasonal Recipes</Nav.Link>
+            <Nav.Link as={Link} to="/popular">Popular</Nav.Link>
+            <Nav.Link as={Link} to="/seasonal">Seasonal Recipes</Nav.Link>
             <Nav.Link as={Link} to="/bake">Bake</Nav.Link>
-            <Nav.Link href="/recipes.js">Recent Recipes</Nav.Link>
-            <Nav.Link href="#link">About Us</Nav.Link>
+            <Nav.Link as={Link} to="/recent">Recent Recipes</Nav.Link>
+            <Nav.Link as={Link} to="/mesaurmentConverter">Mesaurement Converter</Nav.Link>
             
             
             {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">

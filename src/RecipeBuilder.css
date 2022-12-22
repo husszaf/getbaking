@@ -1,0 +1,25 @@
+.btn-add-ingredient{
+    margin-left: 1%;
+}
+
+.btn-add-step{
+    margin-left: 1%;
+}
+
+.btn-remove-ingredient{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btn-remove-step{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.recipeName{
+    margin-top: 5%;
+}
+
+.recipeForm{
+    margin-top: 2%;
+}

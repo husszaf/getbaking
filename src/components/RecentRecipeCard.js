@@ -1,18 +1,26 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../PopularRecipeCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Data from '../recipes.json';
 
-function RecipeCard() {
+function RecentRecipeCard() {
   const [recipes, setRecipes] = useState(Data);  // Initialize state with Data
-
+  const sortedRecipes = recipes.sort((a, b) => {
+    const dateA = new Date(a.created);
+    const dateB = new Date(b.created);
+    if (dateA < dateB) return -1;
+    if (dateA > dateB) return 1;
+    return 0;
+  });
   return (
     <div className="container recipe">
-      <h1 className="main-text display-1">Today's Recipes</h1>
-      <div className="row cards">
-        {recipes.slice(0,4).map(recipe => {
+      <h1 className="main-text display-1">Recent Recipes</h1>
+      <div className="row">
+        {sortedRecipes.map(recipe => {
+
           return (
             <>
               <Card style={{ width: '18rem' }}>
@@ -41,4 +49,4 @@ function RecipeCard() {
   );
 }
 
-export default RecipeCard;
+export default RecentRecipeCard;

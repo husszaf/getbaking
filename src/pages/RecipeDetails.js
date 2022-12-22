@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
-import { Accordion, Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Accordion, Col, Container, ListGroup, ListGroupItem, Row } from "react-bootstrap";
 import Data from "../recipes.json"; // Import the recipes data from the JSON file
 import "../recipedetail.css";
-import RecipeBuilder from '../components/RecipeBuilder';
 import RelatedRecipe from '../components/RelatedRecipe';
+
 
 function RecipeDetails() {
   const { recipeId } = useParams(); // Retrieve the recipe object from the list of recipes using the recipeId
@@ -13,7 +13,7 @@ function RecipeDetails() {
   const ingredients = recipe.ingredients; //Get the ingredients for the recipe
 
   return (
-    <Container className="container-2">
+    <Container className="justify-content-center">
       <h1 className="recipeName">{recipe.name}</h1>
       <Container>
         <Row className="profileRow">
@@ -21,29 +21,28 @@ function RecipeDetails() {
           <img src={recipe.profileImage} className="rounded-circle img-thumbnail img-responsive profileImg" alt=""></img>          
           <h6 className="recipeAuthor">{recipe.author}</h6>
           </Col>
-          <Col>
-          </Col>
         </Row>
       </Container>
       {/* Image and description container */}
       <Container className="lead recipeDescription">
         <Row>
-          <Col className="side-by-side">
+          <div className="side-by-side col-sm">
             <img
               src={recipe.images}
               class="img-thumbnail img-responsive"
               alt="..."
             ></img>
-          </Col>
+          </div>
           <Col>
             <p className="recipeDescription">{recipe.description}</p>
           </Col>
         </Row>
       </Container>
+
       {/* Ingredients and steps Container */}
       <Container>
         <Row>
-          <Col>
+          <div className='col-sm-auto'>
             <h3>Ingredients:</h3>
             <ListGroup>
               {ingredients.map((ingredient) => {
@@ -56,8 +55,41 @@ function RecipeDetails() {
                 );
               })}
             </ListGroup>
-          </Col>
-          <Col>
+            </div>
+              <div className='col-sm-auto'>
+            <h3>Nutrition:</h3>
+            <ListGroup>
+              {/* Here you can add the nutrition information for the recipe using the same format as the ingredients ListGroup */}
+              <ListGroup.Item className="lead">
+                Serving - {recipe.nutrition[0].serving}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                kcal - {recipe.nutrition[0].kcal}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                fat - {recipe.nutrition[0].fat}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                saturates - {recipe.nutrition[0].saturates}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                carbs - {recipe.nutrition[0].carbs}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                sugars - {recipe.nutrition[0].sugars}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                fibre - {recipe.nutrition[0].fibre}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                Protein - {recipe.nutrition[0].protein}
+              </ListGroup.Item>
+              <ListGroup.Item className="lead">
+                Salt - {recipe.nutrition[0].salt}
+              </ListGroup.Item>
+            </ListGroup>
+            </div>
+          <div className='col-sm'>
             <h3>Instructions:</h3>
             {steps.map((step, index) => {
               return (
@@ -73,8 +105,9 @@ function RecipeDetails() {
                 </Accordion>
               );
             })}
-          </Col>
-        </Row>
+          </div>
+          </Row>
+        
       </Container>
 
       {/* Related recipes */}
