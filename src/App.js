@@ -19,6 +19,7 @@ import Seasonal from "./pages/Seasonal";
 import Recent from "./pages/Recent";
 import RecipeMeasurementConverter from "./pages/mesaurmentConverter"; 
 import Getbaking from "./getbaking";
+import CountdownTimer from "./pages/CountdownTimer";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route exact path="/recipes" element={<Recipes />} />
         <Route exact path="/Bake" element={<Bake />} />
         <Route exact path="/Recent" element={<Recent />} />
+        <Route exact path="/CountdownTimer" element={<CountdownTimer/>} />
         <Route exact path="/mesaurmentConverter" element={<RecipeMeasurementConverter/>} />
         <Route exact path="/pages/RecipeDetails/:recipeId" element={<RecipeDetails/>} />
       </Routes>

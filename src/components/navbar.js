@@ -17,6 +17,7 @@ function theNavbar() {
             <Nav.Link as={Link} to="/seasonal">Seasonal Recipes</Nav.Link>
             <Nav.Link as={Link} to="/bake">Bake</Nav.Link>
             <Nav.Link as={Link} to="/recent">Recent Recipes</Nav.Link>
+            <Nav.Link as={Link} to="/CountdownTimer">Countdown Timer</Nav.Link>
             <Nav.Link as={Link} to="/mesaurmentConverter">Mesaurement Converter</Nav.Link>
             
             

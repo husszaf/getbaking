@@ -1,10 +1,20 @@
-import React from 'react';
+import React from "react";
 import { useParams } from "react-router-dom";
-import { Accordion, Col, Container, ListGroup, ListGroupItem, Row } from "react-bootstrap";
+import {
+  Accordion,
+  Col,
+  Container,
+  ListGroup,
+  ListGroupItem,
+  Row,
+} from "react-bootstrap";
 import Data from "../recipes.json"; // Import the recipes data from the JSON file
 import "../recipedetail.css";
-import RelatedRecipe from '../components/RelatedRecipe';
-
+import RelatedRecipe from "../components/RelatedRecipe";
+import FacebookShareLink from "../components/fbShare";
+import TwitterShareLink from "../components/twShare";
+import "../ShareLinks.css";
+import Timer from "../components/RecipeTimer";
 
 function RecipeDetails() {
   const { recipeId } = useParams(); // Retrieve the recipe object from the list of recipes using the recipeId
@@ -16,10 +26,18 @@ function RecipeDetails() {
     <Container className="justify-content-center">
       <h1 className="recipeName">{recipe.name}</h1>
       <Container>
+        <div className="sharelinks">
+          <FacebookShareLink />
+          <TwitterShareLink />
+        </div>
         <Row className="profileRow">
           <Col className="side-by-side profileCol">
-          <img src={recipe.profileImage} className="rounded-circle img-thumbnail img-responsive profileImg" alt=""></img>          
-          <h6 className="recipeAuthor">{recipe.author}</h6>
+            <img
+              src={recipe.profileImage}
+              className="rounded-circle img-thumbnail img-responsive profileImg"
+              alt=""
+            ></img>
+            <h6 className="recipeAuthor">{recipe.author}</h6>
           </Col>
         </Row>
       </Container>
@@ -36,13 +54,18 @@ function RecipeDetails() {
           <Col>
             <p className="recipeDescription">{recipe.description}</p>
           </Col>
+          <Row>
+            <Col className="col-sm-auto">
+              <Timer />
+            </Col>
+          </Row>
         </Row>
       </Container>
 
       {/* Ingredients and steps Container */}
       <Container>
         <Row>
-          <div className='col-sm-auto'>
+          <div className="col-sm-auto">
             <h3>Ingredients:</h3>
             <ListGroup>
               {ingredients.map((ingredient) => {
@@ -55,8 +78,8 @@ function RecipeDetails() {
                 );
               })}
             </ListGroup>
-            </div>
-              <div className='col-sm-auto'>
+          </div>
+          <div className="col-sm-auto">
             <h3>Nutrition:</h3>
             <ListGroup>
               {/* Here you can add the nutrition information for the recipe using the same format as the ingredients ListGroup */}
@@ -88,8 +111,8 @@ function RecipeDetails() {
                 Salt - {recipe.nutrition[0].salt}
               </ListGroup.Item>
             </ListGroup>
-            </div>
-          <div className='col-sm'>
+          </div>
+          <div className="col-sm">
             <h3>Instructions:</h3>
             {steps.map((step, index) => {
               return (
@@ -106,8 +129,7 @@ function RecipeDetails() {
               );
             })}
           </div>
-          </Row>
-        
+        </Row>
       </Container>
 
       {/* Related recipes */}
