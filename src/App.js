@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "../src/components/navbar";
 import RecipeCard from "./components/card";
 import AutoSlideCarousel from "./components/carousel";
@@ -18,11 +19,14 @@ import Seasonal from "./pages/Seasonal";
 import Recent from "./pages/Recent";
 import RecipeMeasurementConverter from "./pages/mesaurmentConverter"; 
 import Getbaking from "./getbaking";
+
 const App = () => {
   return (
     <div class="App">
      <Navbar />
+     <ScrollToTop />
       <Routes>
+        
         <Route exact path="/getbaking" element={<Getbaking/>} />
         <Route exact path="/" element={<AutoSlideCarousel/>} />
         <Route exact path="/Popular" element={<Popular />} />
