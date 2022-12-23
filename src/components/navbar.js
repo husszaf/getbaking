@@ -14,7 +14,7 @@ function theNavbar() {
           <Nav className="justify-content-center" style={{ flex: 1}}>
             <Nav.Link as={Link} to="/popular">Popular</Nav.Link>
             <Nav.Link as={Link} to="/seasonal">Seasonal Recipes</Nav.Link>
-            <Nav.Link as={Link} to="/bake">Bake</Nav.Link>
+            <Nav.Link as={Link} to="/bake">Recipe Builder</Nav.Link>
             <Nav.Link as={Link} to="/recent">Recent Recipes</Nav.Link>
             <Nav.Link as={Link} to="/CountdownTimer">Countdown Timer</Nav.Link>
             <Nav.Link as={Link} to="/mesaurmentConverter">Mesaurement Converter</Nav.Link>
