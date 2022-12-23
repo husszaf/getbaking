@@ -1,5 +1,5 @@
 # Interactive Web Design
-Get Baking blog of recipes made using: React.Js, React-Bootstrap and Bootstrap 5
+Get Baking blog of recipes made using: React.Js, React-Bootstrap and Bootstrap 5.
 The Recipe blog assignment.
 The website link: https://husszaf.github.io/getbaking/
 
