@@ -10,7 +10,7 @@ function RecipeCard() {
 
   return (
     <div className="container recipe">
-      <h1 className="main-text display-1">Today's Recipes</h1>
+      <h1 className="main-text display-1">'Bake' by popular demand</h1>
       <div className="row cards">
         {recipes.slice(0,4).map(recipe => {
           return (
